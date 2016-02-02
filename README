@@ -1,0 +1,6 @@
+This is a simple example Python 3.5 program that grabs a url with exception handling and HTTP response codes.
+The response code, headers, and encoding are displayed at run time and the response is captured to a file for viewing or manipulating.
+
+This a very simple program to be expanded upon later as more functionality is needed for new projects.
+
+"Always Forward"
