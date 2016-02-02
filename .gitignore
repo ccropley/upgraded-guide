@@ -1,0 +1,24 @@
+# Webscrapper for learning python and HTTP/web usage
+# Import libs
+import requests
+#error handling
+try:
+    response = requests.get('http://pyvideo.org/category/50/pycon-us-2014')
+except requests.exceptions.ConnectionError as e:
+    print(e)
+
+# HTTP response info
+c = response.status_code
+h = response.headers['content-type']
+encd = response.encoding
+response.text
+
+# output to screen
+print(c)
+print(h)
+print(encd)
+
+# output to html to file
+
+with open('filename.txt', 'w') as out:
+    out.write(response.text)
